@@ -25,7 +25,10 @@
         %>
         
         <h1>omaigosh im so perfect</h1>
-        
+        <p><%
+        if(sesion.getAttribute("hey_guys")!=null){
+            out.print(sesion.getAttribute("hey_guys"));
+            }%></p>
         <form method="POST" action="login.jsp">
             <label for="usu">Usuario</label>
             <br>

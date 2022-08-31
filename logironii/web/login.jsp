@@ -26,13 +26,15 @@
                 sesion.setAttribute("pass",pass);
                 response.sendRedirect("home.jsp");
                 }else{
+                sesion.setAttribute("usu","");
                 sesion.setAttribute("hey_guys","Contraseña incorrecta");
-                response.sendRedirect("logint.jsp");
+                response.sendRedirect("index.jsp");
                 }
             }
             else{
+            sesion.setAttribute("usu","");
             sesion.setAttribute("hey_guys","Usuario incorrecto");
-            response.sendRedirect("logint.jsp");
+            response.sendRedirect("index.jsp");
             }
         %>
     </body>
